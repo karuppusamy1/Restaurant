@@ -1,0 +1,66 @@
+/* About.css */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap');
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: 'Belanosima',sans-serif;
+}
+h2{
+  color: #007bff;
+  font-size: 50px;
+}
+
+.about-image {
+  flex: 1; 
+  padding: 20px;
+  text-align: center; 
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.about-text {
+  flex: 1; 
+  text-align: justify; 
+  hyphens: auto;
+  padding: 10px;
+}
+.button {
+  font-size: 20px;
+  text-align: center;
+  margin-left: 250px;
+  border-radius: 50px;
+}
+
+@media (min-width:768px) {
+  .about-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-image,
+  .about-text {
+    flex: 1; 
+  }
+  .button{
+    margin-left: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .about-text{
+    width: 100%;
+    font-size: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .button{
+    margin-left: 0;
+  }
+}

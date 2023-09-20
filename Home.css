@@ -1,0 +1,308 @@
+/* Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap');
+
+/* General styles */
+.home {
+  font-family: Arial, sans-serif;
+  color: #333; /* Default text color */
+  line-height: 1.6;
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f7f7f7;
+  background-image: url('C:\Users\Karup\restaurant\src\i3.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff; 
+  height: 450px;
+  margin-top: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Belanosima',sans-serif;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #f7f7f7;
+  font-family: 'Belanosima',sans-serif;
+}
+
+.btn-primary {
+  background-color: #FF5722;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  font-family: 'Belanosima',sans-serif;
+}
+
+.btn-primary:hover {
+  background-color: #E64A19;
+}
+
+/* Hero image styles */
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Our Story section styles */
+.our-story {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #fff;
+  position: relative; 
+  font-family: 'Belanosima',sans-serif;
+}
+
+/* Background pattern */
+.our-story::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg, 
+    red 0px, 
+    #FFF 10px, 
+    #E0E0E0 10px, 
+    #E0E0E0 20px 
+  )
+}
+
+.our-story h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  border-bottom: 2px solid #FF5722; 
+  display: inline-block; 
+  padding-bottom: 5px; 
+  font-family: 'Belanosima',sans-serif;
+}
+
+.our-story p {
+  font-size: 1.4rem;
+  color: #555;
+  margin-top: 30px; 
+  font-family: 'Belanosima',sans-serif;
+  text-align: justify;
+
+}
+
+/* Container for the story text */
+.story-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.button {
+  background-color: #007bff;
+  color: #E0E0E0;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Belanosima',sans-serif;
+} 
+
+/* Customer Reviews section styles */
+.customer-reviews {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.customer-reviews h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: black;
+  font-family: 'Belanosima',sans-serif;
+}
+
+.review {
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: grey;
+  border-color: yellow;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review h3 {
+  font-size: 1.8rem;
+  color: black;
+  font-family: 'Belanosima',sans-serif;
+}
+
+.rating {
+  font-size: 1.5rem;
+  color: #FF5722; 
+  margin-bottom: 10px;
+}
+
+.review p {
+  font-size: 1.2rem;
+  color: white;
+  font-family: 'Belanosima',sans-serif;
+}
+
+/* Customer Ratings section styles */
+.customer-ratings {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: aqua;
+  border-width: 10px;
+  border-style: solid;
+  font-family: 'Belanosima',sans-serif;
+}
+
+.customer-ratings h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: black;
+  display: inline;
+}
+
+.average-rating {
+  font-size: 2rem;
+  color: #FF5722; 
+}
+
+.customer-ratings .rating {
+  font-size: 2rem;
+  color: #FF5722; 
+}
+
+/* Dish Name and Description section styles */
+.dish-details {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.dish-details h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-family: 'Belanosima',sans-serif;
+}
+
+.featured-dish {
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: #E64A19;
+  border-width: 10px;
+  border-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dish-image {
+  flex: 1;
+  max-width: 45%;
+  padding: 10px;
+}
+
+.dish-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.dish-details-content {
+  flex: 1;
+  max-width: 50%;
+  padding: 10px;
+  text-align: left;
+  font-family: 'Belanosima',sans-serif;
+}
+
+.dish-details-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.dish-details-content p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+
+/* Base styles for the hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f7f7f7;
+}
+
+/* Hero image styles */
+.hero-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+
+.our-story {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    width: 100%;
+  }
+  .hero p{
+    width: 100%;
+  }
+  .hero-image{
+    width: 100%;
+  }
+  .our-story p{
+    text-align: justify;
+  }
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+}
+

@@ -1,0 +1,65 @@
+/* Navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600&display=swap');
+
+.navbar {
+  background-color: #fff; 
+  color: #555; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Style the restaurant name/logo */
+.navbar-logo a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  font-family: 'Belanosima',sans-serif;
+  font-weight: bold;
+}
+
+/* Style the navigation links */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-family: 'Belanosima',sans-serif;
+  font-weight: bold;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #FF5722; 
+}
+@media screen and (max-width: 600px){
+ .navbar{
+  float: none;
+  display: block;
+  text-align: left;
+ }
+ .navbar-links{
+  display: block;
+  text-align: left;
+  font-size: 20px;
+ }
+
+}
+@media screen and (max-width: 1024px) {
+  .navbar{
+    background-color: #ccc;
+    font-size: 10px;
+  }
+  .navbar-links{
+    padding: 50px;
+  }
+}
+  
